@@ -115,10 +115,10 @@ function esImpar(num) {
   // Devuelve "true" si "num" es impar
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (num % 2 == 0) {
-    return false;
+  if (num % 2 != 0) {
+    return true;
   }
-  return true;
+  return false;
 }
 
 function elevarAlCuadrado(num) {
@@ -226,15 +226,13 @@ function esVocal(letra) {
   //Escribe tu código aquí
   if (letra.length > 1) {
     return "Dato incorrecto";
-  } else if (letra == "a") {
-    return "Es vocal";
-  } else if (letra == "e") {
-    return "Es vocal";
-  } else if (letra == "i") {
-    return "Es vocal";
-  } else if (letra == "o") {
-    return "Es vocal";
-  } else if (letra == "u") {
+  } else if (
+    letra == "a" ||
+    letra == "e" ||
+    letra == "i" ||
+    letra == "o" ||
+    letra == "u"
+  ) {
     return "Es vocal";
   }
   return "Dato incorrecto";
