@@ -214,7 +214,6 @@ function tablaDelSeis() {
   let array = [];
   for (var i = 0; i <= 60; i = i + 1 + 5) {
     array.push(i);
-    console.log(array);
   }
   return array;
 }
